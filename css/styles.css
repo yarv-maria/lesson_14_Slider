@@ -1,0 +1,153 @@
+@font-face {
+    url('../source/fonts/Myriad Pro Regular.ttf')
+    font-family: 'Myriad Pro Regular', sans-serif;
+}
+
+* {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 1375px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    margin: auto;
+    opacity: 0;
+}
+
+.slide {
+    position: relative;
+    z-index: -1;
+}
+
+.slide img {
+    display: block;
+}
+
+h1,
+.more-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+h1 {
+    left: 100px;
+    width: 410px;
+    height: 66px;
+    text-transform: uppercase;
+}
+
+.more-info {
+    right: 140px;
+    background: url(../source/images/button-background.png);
+    width: 171px;
+    height: 53px;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 53px;
+    text-decoration: none;
+}
+
+
+.slick-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(163, 165, 179, .7);
+    width: 53px;
+    height: 53px;
+    border: none;
+    font-size: 0;
+    color: transparent;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.slick-prev:before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 20px;
+    left: 20px;
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.slick-next:before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 20px;
+    right: 20px;
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
+
+.slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    font-size: 0;
+    color: transparent;
+    border: none;
+    transition: .4s;
+}
+
+.slick-dots li.slick-active button {
+    width: 22px;
+    height: 22px;
+    background: #5c9265;
+    border: 3px solid white;
+}
+
+button:active,
+button:focus {
+    outline: none; /* сбросить и со слайда рамку*/
+}
