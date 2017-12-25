@@ -63,6 +63,14 @@ h1 {
     text-decoration: none;
 }
 
+.more-info:hover {
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+}
+
 
 .slick-arrow {
     display: block;
@@ -77,6 +85,10 @@ h1 {
     font-size: 0;
     color: transparent;
     z-index: 1;
+}
+
+.slick-arrow:hover {
+    background: rgba(163, 165, 179, 1);
 }
 
 .slick-prev {
